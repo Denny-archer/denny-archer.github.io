@@ -1,0 +1,474 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+/*bootstrap icons*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+/* Resetando estilos padrão e definindo algumas regras globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+h2.titulo{
+    color: aliceblue;
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Estilos para elementos com a classe .flex */
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Estilos para o cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    transition: .2s;
+}
+
+/* ESTILO MENU MOBILE*/
+
+.btn-abrir-menu i{
+    color: #fcfcfc;
+    font-size: 80px;
+}
+
+.menu-mobile{
+    background-color: rgb(5, 5, 5);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #fcfcfc;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right; 
+    padding: 20px ;
+
+ }
+
+ .menu-mobile nav ul li a{
+    color: #fcfcfc;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px  15%;
+    line-height: 30px;
+    display: block;
+    
+    
+ }
+ .menu-mobile nav ul li a:hover{
+    background-color: #8E5D52;
+ }
+
+.overlay-menu{
+    background-color: #8e5d5200;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* Estilos para links dentro do cabeçalho quando hover */
+header a:hover {
+    color: #fcfcfc;
+    transform: scale(1.5);
+}
+
+/* Estilos para a imagem do logotipo */
+.imagem-logo {
+    height: 72px;
+}
+
+/* Estilos para o grupo de elementos do cabeçalho */
+.grupo-cabecalho {
+    display: flex;
+    gap: 32px;
+}
+
+/* Estilos para elementos com a classe .cabecalho-um */
+.cabecalho-um {
+    font-family: 'Sarala', sans-serif;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Estilos para o grupo principal */
+.principal-grupo {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilos para a seção um */
+section.secao-um {
+    padding: 40px 4%;
+}
+
+/* Estilos para o conteúdo principal */
+.conteudo-principal {
+    margin-bottom: 48px;
+    border-top: 0.4px solid white;
+}
+
+/* Estilos para elementos na seção um */
+.secao-um {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilos para a imagem com a classe .imagen-dois */
+.imagen-dois {
+    margin-top: 5px;
+    height: 300px;
+    padding-left: 20px;
+}
+
+/* Estilos para o grupo principal (outro) */
+.principal-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 70px;
+}
+
+/* Estilos para elementos com a classe .apresent */
+.apresent {
+    font-size: 40px;
+}
+
+/* Estilos para a classe .apresentacao */
+.apresentacao {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: aliceblue;
+}
+
+/* Estilos para a classe .apresentacao-dois */
+.apresentacao-dois {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+/* Estilos para o botão */
+.botao {
+    background-color: antiquewhite;
+    width: 180px;
+    height: 67px;
+    border: none;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: Sarala;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(47, 35, 37, 1);
+}
+
+ .imgg-top-site img{
+position: relative;
+animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Estilos para o botão dentro do cabeçalho quando hover */
+header .botao:hover {
+    box-shadow: 0px 0px 8px;
+}
+
+/* Estilos para a seção final e o rodapé */
+.final {
+    padding: 32px;
+    border-top: 0.4px solid white;
+}
+
+/* Estilos para elementos com a classe .ultimo */
+.ultimo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+/* Estilos para elementos com a classe .outro-inicio */
+.outro-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 160px;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+/* Estilos para elementos com as classes .apresentacao e .outro-inicio (ocultas) */
+.apresentacao,
+.outro-inicio {
+    visibility: hidden;
+}
+/*ESTILO DE HABILIDADES*/
+
+section.habilidades {
+    padding: 40px 4%;
+    margin-top: -10px;
+}
+
+section.habilidades .flex {
+    gap: 60px;
+}
+
+.habilidades .habilidades-box {
+    color: #fcfcfc;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #fcfcfc94;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.habilidades .habilidades-box:hover, form .btn-enviar input {
+    
+    box-shadow: 0 0 8px #fcfcfc;
+    transform: scale(1.03);
+}
+
+.habilidades .habilidades-box i {
+    font-size: 70px;
+    color: chartreuse;
+}
+
+.habilidades .habilidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/*ESTILO DO SOBRE*/
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fcfcfc;
+}
+
+.sobre .txt-sobre p{
+    margin: 30px 0;
+    text-align:justify ;
+    font-size: 20px;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #fcfcfc;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+
+}
+
+.btn-social button:hover{
+    box-shadow: 0px 0px 8px #fcfcfc;
+    transform: scale(1.05);
+}
+
+
+/*estilo de projetos*/
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #8f8c8c;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+
+
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: row; /* Defina a direção da linha */
+    
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: aquamarine;
+    background-size: cover;
+    background-position:100% 0% ;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+   
+    
+}
+
+.img-port:hover{
+    background-position:100% 100% ;
+}
+
+.overpro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8e5d52a2;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fcfcfc;
+    opacity: 0;
+    transition: 2s;
+}
+
+.overpro:hover{
+    opacity: 1;
+}
+
+
+/*estilo do formulario*/
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+width: 100%;
+background-color: #8E5D52;
+border: 0;
+outline: 0;
+padding: 20px 15px;
+border-radius: 15px;
+color: #fcfcfc;
+font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #2F2325;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1020px) {
+    /* classes gerais*/
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    
+    /*cabeçalho*/
+    .grupo-cabecalho{
+        display: none;
+    }
+
+    /* Estilos para a classe .apresentacao */
+.apresentacao {
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+/*ESTILO DE HABILIDADES*/
+
+section.habilidades {
+    padding: 40px 8%;
+    
+}
+
+/* Estilos para a imagem do logotipo */
+.imagem-logo {
+      position: relative;
+      right: 50px;
+      height: 100px;
+}
+
+}
